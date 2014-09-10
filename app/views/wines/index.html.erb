@@ -1,0 +1,7 @@
+<h1>The Top <%= @wines.count %> Best Value Wines in the World</h1>
+<p>Available as of <%= formatted_time(@available_at) %></p>
+<ol>
+	<% @wines.each do |wine| %>
+	<li><%= link_to(wine.name, wine) %>, <%= wine.winery %>, <%= wine.varietal %></li>
+	<% end %>
+</ol>

@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Wine.create(name:'Santa Rita Reserva', year:2011, winery:'Casablanca Valley', country:'Chile', varietal:'Sauvignon Blanc')
+Wine.create(name:'Jacob''s Creek Reserve', year:2012, winery:'Coonawarra', country:'Australia', varietal:'Cabernet Sauvignon')
+Wine.create(name:'Tahbilk', year:2013, winery:'Nagambie Lakes', country:'Australia', varietal:'Marsanne')
+Wine.create(name:'Chateau Haut Rian Blanc Sec', year:2012, winery:'Chateau Haut Rian', country:'France', varietal:'Bordeaux')
+Wine.create(name:'Lindeman''s Reserve', year:2010, winery:'Padthaway', country:'Australia', varietal:'Shiraz')
+Wine.create(name:'Barnard Griffin Fume', year:2012, winery:'Columbia Valley', country:'USA', varietal:'Sauvignon Blanc')
+Wine.create(name:'Garnacha Centenaria', year:2012, winery:'Campo de Borja', country:'Spain', varietal:'Grenache')
+Wine.create(name:'Vignobles Despagne', year:2012, winery:'Chateau Tour de Mirambeau', country:'France', varietal:'Bordeaux')
+Wine.create(name:'Yellow Label', year:2011, winery:'Wolf Blass', country:'Australia', varietal:'Shiraz')
+Wine.create(name:'La Carraia', year:2011, winery:'Umbria', country:'Italy', varietal:'Sangiovese')
