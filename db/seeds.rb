@@ -3,7 +3,7 @@ Wine.create(name:'Jacob''s Creek Reserve', year:2012, winery:'Coonawarra', count
 Wine.create(name:'Tahbilk', year:2013, winery:'Nagambie Lakes', country:'Australia', varietal:'Marsanne')
 Wine.create(name:'Chateau Haut Rian Blanc Sec', year:2012, winery:'Chateau Haut Rian', country:'France', varietal:'Bordeaux')
 Wine.create(name:'Lindeman''s Reserve', year:2010, winery:'Padthaway', country:'Australia', varietal:'Shiraz')
-Wine.create(name:'Barnard Griffin Fume', year:2012, winery:'Columbia Valley', country:'USA', varietal:'Sauvignon Blanc')
+Wine.create(name:'Barnard Griffin Fume', year:2012, winery:'Columbia Valley', country:'United States', varietal:'Sauvignon Blanc')
 Wine.create(name:'Garnacha Centenaria', year:2012, winery:'Campo de Borja', country:'Spain', varietal:'Grenache')
 Wine.create(name:'Vignobles Despagne', year:2012, winery:'Chateau Tour de Mirambeau', country:'France', varietal:'Bordeaux')
 Wine.create(name:'Yellow Label', year:2011, winery:'Wolf Blass', country:'Australia', varietal:'Shiraz')

@@ -10,17 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require 'bootstrap'
  */
 <style type="text/css">
-	dd {
-		margin-left: 100px;
-	}
-	dt {
-	  float: left;
-	  font-weight: bold;
-	  width:100px;
-	}
-	label{
-		font-weight: bold;
-	}
+
 </style>

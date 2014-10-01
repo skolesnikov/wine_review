@@ -1,9 +1,9 @@
-<h1>The Top <%= @wines.count %> Best Value Wines in the World</h1>
-<p>Available as of <%= formatted_time(@available_at) %></p>
-<ol>
+<h1>The Top <%= @count %> Best Value Wines in the World</h1>
+<p>As of <%= formatted_time(@available_at) %></p>
+<%= page_entries_info @wines %>
+<ol start="<%= @wines.default_per_page * (@wines.current_page - 1) + 1 %>">
 	<% @wines.each do |wine| %>
 	<li><%= link_to(wine.name, wine) %>, <%= wine.winery %>, <%= wine.varietal %></li>
 	<% end %>
-</ol>
-
-<%= link_to 'New Wine', new_wine_path %>
+</0l>
+<%= paginate @wines %>

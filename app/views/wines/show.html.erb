@@ -1,33 +1,49 @@
-<article class="wine">
-	<header>
-		<h2><%= @wine.name %></h2>
-	</header>
+<% content_for :name, @wine.name %>
 
-	<p>
-		<label>Year:</label>
-		<%= @wine.year %>
-	</p>
+<article class="form-horizontal">
+  <header>
+    <h2><%= @wine.name %></h2>
+  </header>
 
-	<p>
-		<label>Winery:</label>
-		<%= @wine.winery %>
-	</p>
-		
-	<p>
-		<label>Country:</label>
-		<%= @wine.country %>
-	</p>
-		
-	<p>
-		<label>Varietal:</label>
-		<%= @wine.varietal %>
-	</p>	
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
+      Year:
+    </label>
+    <p class="form-control-static">
+   	  <%= @wine.year %>
+   	</p>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
+      Winery:
+    </label>
+    <p class="form-control-static">
+      <%= @wine.winery %>
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
+      Country:
+    </label>
+    <p class="form-control-static">
+      <%= @wine.country %>
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
+      Varietal:
+    </label>
+    <p class="form-control-static">
+      <%= @wine.varietal %>
+    </p>
+  </div>
 </article>
 
 <p>
-	<%= link_to 'Top ' + @count.to_s + ' Wines', wines_path %> | <%= link_to 'Edit', edit_wine_path(@wine) %>
-</p>
-
-<p>
-	<%= button_to 'Delete', @wine, method: :delete, data: {confirm: 'Are you sure?'} %>
+	<%= link_to 'Edit', edit_wine_path(@wine) %> | 
+	<%= link_to 'Return', wines_path %> 
+	<%= button_to 'Delete', @wine, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-danger form-horizontal" %>
 </p>
