@@ -2,7 +2,7 @@ class LogEntriesController < ApplicationController
   before_action :set_wine
 
   def index
-  	@log_entries = @wine.log_entries #.order('tasted_on desc')
+  	@log_entries = @wine.log_entries.order('tasted_on desc')
   end
 
   def new
@@ -12,7 +12,7 @@ class LogEntriesController < ApplicationController
   def create
     @log_entry = @wine.log_entries.new(log_entry_params)
     if @log_entry.save
-      redirect_to wine_log_entries_path(@wine), notice: 'Log Entry saved!'
+      redirect_to wine_log_entries_path(@wine), notice: 'Review saved!'
     else
       render :new
     end
