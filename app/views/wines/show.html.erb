@@ -40,10 +40,24 @@
       <%= @wine.varietal %>
     </p>
   </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">
+      Average Rating:
+    </label>
+    <p class="form-control-static">
+      <%= format_average_rating(@wine) %>
+    </p>
+  </div>
 </article>
 
 <p>
 	<%= link_to 'Edit', edit_wine_path(@wine) %> | 
 	<%= link_to 'Return', wines_path %> 
 	<%= button_to 'Delete', @wine, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-danger form-horizontal" %>
+</p>
+
+<p>
+  Read <%= link_to pluralize(@wine.log_entries.size, 'review'), 
+                        wine_log_entries_path(@wine) %>
 </p>
